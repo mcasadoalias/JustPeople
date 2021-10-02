@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersListFragment">
+
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="es.iesnervion.mcasado.justpeople.UsersListFragment"
+        android:label="fragment_users_list"
+        tools:layout="@layout/fragment_users_list" />
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="es.iesnervion.mcasado.justpeople.AddUserFragment"
+        android:label="fragment_add_user"
+        tools:layout="@layout/fragment_add_user" />
+    <fragment
+        android:id="@+id/removeUserFragment"
+        android:name="es.iesnervion.mcasado.justpeople.RemoveUserFragment"
+        android:label="fragment_remove_user"
+        tools:layout="@layout/fragment_remove_user" />
+
+    <action android:id="@+id/action_global_addUserFragment" app:destination="@id/addUserFragment" />
+    <action android:id="@+id/action_global_removeUserFragment" app:destination="@id/removeUserFragment" />
+    <action android:id="@+id/action_global_usersListFragment" app:destination="@id/usersListFragment" />
+
+</navigation>
