@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
 
@@ -17,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 class UsersListFragment : Fragment() {
 
 
-    lateinit var recycler : RecyclerView
+    private lateinit var recycler : RecyclerView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

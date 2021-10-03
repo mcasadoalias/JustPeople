@@ -8,4 +8,5 @@
     <string name="hello_users_list_fragment">USERS LIST</string>
     <string name="hello_remove_user_fragment">REMOVE USER</string>
     <string name="hello_add_user_fragment">ADD USER</string>
+    <string name="baseUrl">https://615974b0601e6f0017e5a1cd.mockapi.io/</string>
 </resources>

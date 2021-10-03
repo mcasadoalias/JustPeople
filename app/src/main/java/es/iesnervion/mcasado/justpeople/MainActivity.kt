@@ -2,8 +2,14 @@ package es.iesnervion.mcasado.justpeople
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import es.iesnervion.mcasado.justpeople.model.Person
+import es.iesnervion.mcasado.justpeople.vm.PeopleVM
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val botNav: BottomNavigationView = findViewById(R.id.navigation)
         val navH = supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
-
+        val peopleViewModel by viewModel<PeopleVM>()
 
         botNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -39,4 +45,5 @@ class MainActivity : AppCompatActivity() {
         }
         botNav.selectedItemId = R.id.users_list
     }
+
 }

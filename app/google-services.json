@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1009753130233",
+    "project_id": "just-people",
+    "storage_bucket": "just-people.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009753130233:android:f21f8cc9a6f1cac53c4e28",
+        "android_client_info": {
+          "package_name": "es.iesnervion.mcasado.justpeople"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009753130233-69fs649dq8imbhv9c2kn7o6ph90ork38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhDg76K90ZiONES6X58G4s08s6mX5vJgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009753130233-69fs649dq8imbhv9c2kn7o6ph90ork38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
