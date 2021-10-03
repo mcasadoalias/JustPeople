@@ -1,13 +1,11 @@
 package es.iesnervion.mcasado.justpeople.vm
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.liveData
+import androidx.lifecycle.*
 
 import es.iesnervion.mcasado.justpeople.model.Person
 import es.iesnervion.mcasado.justpeople.repo.PeopleRepo
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class PeopleVM(private val peopleRepo: PeopleRepo) : ViewModel() {
@@ -19,8 +17,8 @@ class PeopleVM(private val peopleRepo: PeopleRepo) : ViewModel() {
         emit (data)
     }
 
-    suspend fun addPerson (p : Person) {
-        withContext(Dispatchers.IO){
+    fun addPerson (p : Person) {
+        viewModelScope.launch{
             peopleRepo.addPerson(p)
         }
     }

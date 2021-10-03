@@ -6,12 +6,14 @@
     <string name="add_person">Add Person</string>
     <string name="remove_person">Remove Person</string>
     <string name="hello_persons_list_fragment">PERSONS LIST</string>
-    <string name="hello_remove_person_fragment">REMOVE PERSON</string>
+    <string name="hello_remove_person_fragment">REMOVE PERSON IS UNDER CONSTRUCTION</string>
     <string name="hello_add_person_fragment">ADD PERSON</string>
     <string name="baseUrl">https://615974b0601e6f0017e5a1cd.mockapi.io/</string>
-    <string name="surname">Surname</string>
+    <string name="surname">Surname*</string>
     <string name="required">*Required</string>
-    <string name="name">Name</string>
+    <string name="name">Name*</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="name_required">Name is required</string>
+    <string name="surname_required">Surname is required</string>
 </resources>
