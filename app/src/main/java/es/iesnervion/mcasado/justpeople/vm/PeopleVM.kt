@@ -8,6 +8,7 @@ import androidx.lifecycle.liveData
 import es.iesnervion.mcasado.justpeople.model.Person
 import es.iesnervion.mcasado.justpeople.repo.PeopleRepo
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 class PeopleVM(private val peopleRepo: PeopleRepo) : ViewModel() {
     /*private val _persons = MutableLiveData<ArrayList<Person>>()
@@ -18,4 +19,9 @@ class PeopleVM(private val peopleRepo: PeopleRepo) : ViewModel() {
         emit (data)
     }
 
+    suspend fun addPerson (p : Person) {
+        withContext(Dispatchers.IO){
+            peopleRepo.addPerson(p)
+        }
+    }
 }

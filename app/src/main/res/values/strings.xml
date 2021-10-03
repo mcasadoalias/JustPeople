@@ -9,4 +9,9 @@
     <string name="hello_remove_person_fragment">REMOVE PERSON</string>
     <string name="hello_add_person_fragment">ADD PERSON</string>
     <string name="baseUrl">https://615974b0601e6f0017e5a1cd.mockapi.io/</string>
+    <string name="surname">Surname</string>
+    <string name="required">*Required</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 </resources>

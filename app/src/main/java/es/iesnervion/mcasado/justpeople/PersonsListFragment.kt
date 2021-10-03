@@ -23,11 +23,11 @@ class PersonsListFragment : Fragment() {
 
 
     private lateinit var recycler : RecyclerView
-
+    private val peopleViewModel by viewModel<PeopleVM>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val peopleViewModel by viewModel<PeopleVM>()
+
 
         peopleViewModel.persons.observe(this, Observer { p: List<Person> ->
             recycler.adapter = PeopleAdapter (p)
