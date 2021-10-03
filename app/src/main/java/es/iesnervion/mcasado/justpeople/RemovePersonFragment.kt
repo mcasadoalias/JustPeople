@@ -8,10 +8,10 @@ import android.view.ViewGroup
 
 /**
  * A simple [Fragment] subclass.
- * Use the [RemoveUserFragment.newInstance] factory method to
+ * Use the [RemovePersonFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class RemoveUserFragment : Fragment() {
+class RemovePersonFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +23,7 @@ class RemoveUserFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_remove_user, container, false)
+        return inflater.inflate(R.layout.fragment_remove_person, container, false)
     }
 
     companion object {
@@ -35,6 +35,6 @@ class RemoveUserFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance() =
-            RemoveUserFragment()
+            RemovePersonFragment()
     }
 }

@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/users_list"
+        android:id="@+id/item_people_list"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_group_24"
-        android:title="@string/users_list"/>
+        android:title="@string/people_list"/>
 
     <item
-        android:id="@+id/add_user"
+        android:id="@+id/add_person"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_person_add_24"
-        android:title="@string/add_user"/>
+        android:title="@string/add_person"/>
 
     <item
-        android:id="@+id/remove_user"
+        android:id="@+id/remove_person"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_person_remove_24"
-        android:title="@string/remove_user"/>
+        android:title="@string/remove_person"/>
 
 </menu>

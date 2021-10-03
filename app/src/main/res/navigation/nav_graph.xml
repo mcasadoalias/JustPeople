@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/usersListFragment"
-        android:name="es.iesnervion.mcasado.justpeople.UsersListFragment"
+        android:name="es.iesnervion.mcasado.justpeople.PersonsListFragment"
         android:label="fragment_users_list"
-        tools:layout="@layout/fragment_users_list" />
+        tools:layout="@layout/fragment_persons_list" />
     <fragment
         android:id="@+id/addUserFragment"
-        android:name="es.iesnervion.mcasado.justpeople.AddUserFragment"
+        android:name="es.iesnervion.mcasado.justpeople.AddPersonFragment"
         android:label="fragment_add_user"
-        tools:layout="@layout/fragment_add_user" />
+        tools:layout="@layout/fragment_add_person" />
     <fragment
         android:id="@+id/removeUserFragment"
-        android:name="es.iesnervion.mcasado.justpeople.RemoveUserFragment"
+        android:name="es.iesnervion.mcasado.justpeople.RemovePersonFragment"
         android:label="fragment_remove_user"
-        tools:layout="@layout/fragment_remove_user" />
+        tools:layout="@layout/fragment_remove_person" />
 
     <action android:id="@+id/action_global_addUserFragment" app:destination="@id/addUserFragment" />
     <action android:id="@+id/action_global_removeUserFragment" app:destination="@id/removeUserFragment" />

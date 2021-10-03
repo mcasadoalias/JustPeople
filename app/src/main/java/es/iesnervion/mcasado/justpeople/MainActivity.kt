@@ -2,12 +2,8 @@ package es.iesnervion.mcasado.justpeople
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import es.iesnervion.mcasado.justpeople.model.Person
 import es.iesnervion.mcasado.justpeople.vm.PeopleVM
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -21,20 +17,20 @@ class MainActivity : AppCompatActivity() {
 
         botNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.users_list -> {
+                R.id.item_people_list -> {
                     // Respond to users_list
                     val action = NavGraphDirections.actionGlobalUsersListFragment()
                     navH?.findNavController()?.navigate(action)
 
                     true
                 }
-                R.id.add_user -> {
+                R.id.add_person -> {
                     // Respond to add_user
                     val action = NavGraphDirections.actionGlobalAddUserFragment()
                     navH?.findNavController()?.navigate(action)
                     true
                 }
-                R.id.remove_user -> {
+                R.id.remove_person -> {
                     // Respond to remove_user
                     val action = NavGraphDirections.actionGlobalRemoveUserFragment()
                     navH?.findNavController()?.navigate(action)
@@ -43,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-        botNav.selectedItemId = R.id.users_list
+        botNav.selectedItemId = R.id.item_people_list
     }
 
 }
