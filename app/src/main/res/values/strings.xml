@@ -16,4 +16,8 @@
     <string name="cancel">Cancel</string>
     <string name="name_required">Name is required</string>
     <string name="surname_required">Surname is required</string>
+    <string name="show">Show</string>
+    <string name="confirm">Are you totally sureeeeee????!</string>
+    <string name="dialog_label">Are you sure you want to do this???!!!</string>
+    <string name="confirm_action">Yes, Sure...</string>
 </resources>
